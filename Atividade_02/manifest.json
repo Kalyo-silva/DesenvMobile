@@ -1,0 +1,15 @@
+{
+  "short_name": "Catálogo Responsivo",
+  "name": "Catálogo Responsivo",
+  "icons": [
+    {
+      "src": "img/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "black",
+  "background_color": "white"
+}
