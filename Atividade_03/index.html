@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="layout.css">
 </head>
 <body>
+    <script>
+        if ('serviceWorker' in navigator){
+            navigator.serviceWorker.register('/sw.js');
+        }
+    </script>
+    
     <section class="homeContainer">
         <div class="Container"> 
             <header>
