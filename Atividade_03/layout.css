@@ -1,0 +1,429 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Google fonts*/
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Custom*/
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.homeContainer{
+    background-image: url('img/Gradient_roxo.png');
+    background-color: #1f1f1f;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    box-shadow: 0 0 10px gray;
+}
+
+.Controllers{  
+    width: 30%;
+    object-fit: cover;
+    height: 35rem;
+}
+
+.Container{  
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    padding-bottom: 2rem;
+    padding-bottom: 0;
+    width: 60%;
+}
+
+header{
+    display: flex;
+}
+
+header img{
+    width: 10rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header ul{
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header li{
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    color: white;
+    font-weight: 400;
+    transition: all 0.2s;
+}
+
+header li:hover{
+    border-bottom: 2px solid #6d00ea;
+}
+
+h1{
+    color: white;
+    font-size: 8rem;
+    margin-bottom: 0;
+    margin-left: 2rem;  
+    -webkit-text-stroke: 2px black;
+}
+
+button{
+    background: #6d00ea;
+    color: white;
+    border-radius: 10px;
+    padding: 1rem 5rem;
+    font-size: 2rem;
+    margin: 2rem;
+    box-shadow: 5px 5px black;
+    border: 2px solid white;
+    width: fit-content;
+    cursor: pointer;
+}
+
+#Consoles{
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+    align-items: center;
+}
+
+.imageContainer{
+    width: 20%;
+    height: 30rem;
+    border-radius: 15px;
+    box-shadow: 5px 5px #6d00ea, 0 0 10px black;
+    border: 2px solid white;
+    margin-right: 4rem;
+    background-image: url(img/consoles.png);
+    background-size: cover;
+}
+
+h2{
+    font-size: 3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#Consoles li{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    color: black;
+}
+
+#Consoles li::marker{
+    color: #6d00ea;
+}
+
+#Jogos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Jogos h3{
+    font-size: 3rem;
+    margin: 0;
+}
+
+#Jogos p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.info{
+    background: #6d00ea;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    width: 15%;
+    box-shadow: 5px 5px black, 0 0 10px black;
+    border: 2px solid white;
+}
+.left {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.right {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.MainInfo{
+    border: 4px solid #6d00ea;
+    padding: 4rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    width: 25%;
+    color: #6d00ea;
+    box-shadow: 5px 5px black, 0 0 10px black;
+    z-index: 2;
+    background: white;
+}
+
+.MainInfo h3{
+    font-size: 5rem !important;
+    margin: 0;
+}
+
+.gameInfo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem 0;
+    margin-bottom: 2rem;
+}
+
+.GamesContainer{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 2rem;
+}
+
+.game{
+    background: #6d00ea;
+    border-radius: 2rem;
+    display: flex;
+    padding: 1rem;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 2px solid white;
+    box-shadow: 5px 5px black, 0 0 10px black;
+}
+
+.game img{
+    width: 5rem;
+    border-radius: 1rem;
+}
+
+.gameDetails{
+    margin-left: 1rem;
+}
+
+.gameDetails h3{
+    font-size: 2rem !important;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 20rem;
+}
+
+.mostPlayed{
+    margin-bottom: 8rem;
+}
+
+#Community{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 4rem 0;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+
+#Community li{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    color: black;
+}
+
+#Community li::marker{
+    color: #6d00ea;
+}
+
+#Community .imageContainer{
+    margin-right: 0 !important;
+    margin-left: 4rem;
+    width: 100%;
+}
+
+p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+footer{
+    background: #6d00ea;
+    box-shadow: 0px 0px 10px gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+footer img{
+    width: 6rem;
+}
+
+footer h3{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+#Consoles a{
+    text-decoration: underline !important;
+    color: #6d00ea !important;
+}
+
+.news{
+    background-image: url(img/cover.png);
+}
+
+#Community a{
+    width: 20%;
+}
+
+@media only screen and (max-width: 768px) {
+    .Controllers{
+        display: none;
+    }
+
+    header ul{
+        display: none;
+    }
+
+    header img{
+        width: 6rem;
+    }
+
+    .Container{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 4rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    #Consoles .imageContainer{
+        display: none;
+    }
+
+    .consolesContent{
+        background-color: #6d00ea;  
+        color: white;
+        box-shadow: 0 0 10px black;
+    }
+    
+    .consolesContent h2{
+        text-align: center !important;
+        font-size: 2rem !important;
+    }
+
+    .consolesContent li{
+        font-size: 1.5rem !important;
+        color: white !important;
+    }
+
+    #Consoles a{
+        color: black !important;
+    }
+
+    #Consoles li::marker{
+        color: white;
+    }
+
+    .gameInfo{
+        flex-direction: column;
+        margin: 2rem;
+    }
+
+    .left{
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        width: 65%;
+        padding: 1rem;
+    }
+
+    .right{
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0;
+        width: 65%;
+        padding: 1rem;
+    }
+
+    .MainInfo{
+        width: 75%;
+        padding: 2rem;
+    }
+
+    .mainInfo h3{
+        font-size: 4rem !important;
+    }
+
+    .mostPlayed{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    
+    .mostPlayed h2{
+        width: fit-content;
+        font-size: 2rem;
+    }
+
+    .GamesContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .gameDetails{
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .gameDetails h3{
+        font-size: 1.5rem !important;
+        width: 16rem;
+    }
+
+    #Community{
+          flex-direction: column-reverse;
+    }
+
+    #Community .imageContainer{
+        margin: 0;
+        margin-top: 2rem;
+    }
+
+    #Community h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #Community li{
+        font-size: 1.5rem;
+    }
+
+    #Community a{
+        width: 80%;
+    }
+
+    footer h3{
+        display: none;
+    }
+}
